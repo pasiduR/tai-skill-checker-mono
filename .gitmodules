@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/pasiduR/tai-skill-checker.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/pasiduR/tai-skill-checker-web.git

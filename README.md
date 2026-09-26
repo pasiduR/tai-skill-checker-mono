@@ -20,6 +20,16 @@ Employees never see rubrics, scores, or evaluation output.
 └── frontend/   React 19 + Vite admin workspace and employee assessment app
 ```
 
+`backend/` and `frontend/` are git submodules pointing at their own repositories ([tai-skill-checker](https://github.com/pasiduR/tai-skill-checker) and [tai-skill-checker-web](https://github.com/pasiduR/tai-skill-checker-web)). Clone with submodules:
+
+```sh
+git clone --recurse-submodules https://github.com/pasiduR/tai-skill-checker-mono.git
+# or, in an existing clone:
+git submodule update --init
+```
+
+Commit and push changes inside `backend/` or `frontend/` to their own repos first, then commit the updated submodule pointer here.
+
 Each package has its own README with detailed setup, and its own `AGENT.md` with coding conventions:
 
 - [backend/README.md](backend/README.md) – environment, migrations, Docker/Dokploy deployment, API reference, domain guarantees
